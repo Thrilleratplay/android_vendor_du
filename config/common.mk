@@ -123,7 +123,7 @@ PRODUCT_COPY_FILES += \
 # Superuser
 # NOTE: Superuser is being named UPDATE-SuperSU.zip to keep build script happy
 PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
+    vendor/du/prebuilt/common/Superuser.zip:system/addon.d/UPDATE-SuperSU.zip
 
 # Versioning System
 ANDROID_VERSION = 6.0.1
