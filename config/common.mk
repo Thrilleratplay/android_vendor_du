@@ -78,21 +78,14 @@ PRODUCT_PACKAGES += \
     Development \
     SpareParts
 
-# Optional packages
-PRODUCT_PACKAGES += \
-    Basic \
-    PhaseBeam \
-    Chromium \
-    DUCertified
-
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    DU-About \
     LatinIME \
     BluetoothExt \
     CalendarWidget \
     OmniSwitch \
-    LockClock
+    LockClock \
+    SlimLauncher
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -127,10 +120,10 @@ PRODUCT_COPY_FILES += \
         vendor/du/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
         vendor/du/prebuilt/common/etc/hosts.og:system/etc/hosts.og
 
-# SuperSU
+# Superuser
+# NOTE: Superuser is being named UPDATE-SuperSU.zip to keep build script happy
 PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/du/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+    vendor/du/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
 
 # Versioning System
 ANDROID_VERSION = 6.0.1
@@ -154,4 +147,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
     ro.mod.version=$(DU_BUILD_TYPE)-v10.1 \
-
