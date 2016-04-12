@@ -22,6 +22,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     ro.com.android.dataroaming=true
 
+# Disable multiuser
+PRODUCT_PROPERTY_OVERRIDES += fw.show_multiuserui=0
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
