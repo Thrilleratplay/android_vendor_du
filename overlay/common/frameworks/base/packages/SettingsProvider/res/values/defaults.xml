@@ -24,4 +24,7 @@
 
     <!-- Install from Unknown Sources -->
     <bool name="def_install_non_market_apps">true</bool>
+
+    <!-- Default for Settings.Global.GUEST_USER_ENABLED -->
+    <bool name="def_guest_user_enabled">false</bool>
 </resources>
