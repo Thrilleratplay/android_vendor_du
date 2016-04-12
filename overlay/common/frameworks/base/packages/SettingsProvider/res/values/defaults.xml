@@ -21,4 +21,7 @@
 
     <!-- Default state of tap to wake -->
     <bool name="def_double_tap_to_wake">false</bool>
+
+    <!-- Install from Unknown Sources -->
+    <bool name="def_install_non_market_apps">true</bool>
 </resources>
